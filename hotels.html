@@ -22,12 +22,153 @@
         </nav>
       </header>
       
-      <main>
-        <h1 class="visually-hidden">Гостиницы города Седона</h1>
-        <section></section>
-        <section></section>
-      </main>
-		
+      <main class="main-content">
+			
+				<h1 class="visually-hidden">Гостиницы города Седона</h1>
+				
+				<section class="section-filters">
+					<h2 class="visually-hidden">Фильтры</h2>
+					<form method="get" action="https://echo.htmlacademy.ru">
+						<div class="column-left filters-column__first">
+							<h3 class="header-small">Инфраструктура:</h3>
+							<label class="checkbox">
+								<input class="checkbox__input input visually-hidden" type="checkbox" name="booking-pool" value="Бассейн" checked>
+								<span class="checkbox__fake"></span>
+								Бассейн
+							</label>
+							<label class="checkbox">
+								<input class="checkbox__input visually-hidden" type="checkbox" name="booking-parking" value="Парковка" disabled>
+								<span class="checkbox__fake"></span>
+								Парковка
+							</label>
+							<label class="checkbox">
+								<input class="checkbox__input visually-hidden" type="checkbox" name="booking-wifi" value="Wi-Fi">
+								<span class="checkbox__fake"></span>
+								Wi-Fi
+							</label>
+						</div>
+						<div class="column-left filters-column__second">
+							<h3 class="header-small">Тип жилья:</h3>
+							<label class="checkbox">
+								<input class="checkbox__input visually-hidden" type="checkbox" name="booking-hotel" value="Гостиница" checked>
+								<span class="checkbox__fake"></span>
+								Гостиница
+							</label>
+							<label class="checkbox">
+								<input class="checkbox__input visually-hidden" type="checkbox" name="booking-motel" value="Мотель" checked>
+								<span class="checkbox__fake"></span>
+								Мотель
+							</label>
+							<label class="checkbox">
+								<input class="checkbox__input visually__hidden" type="checkbox" name="booking-apartments" value="Апартаменты" checked>
+								<span class="checkbox-fake"></span>
+								Апартаменты
+							</label>
+						</div>
+						<div class="column-right filters-column__third">
+							<h3 class="header-small-price">Стоимость в сутки (Р):</h3>
+							<div class="price__slider-wrapper">
+								<div class="price__inputs">									
+									<input class="price__input price__input-left" type="text" name="booking-price-min" id="price-min"  placeholder="От 0" value="От 0" aria-label="Минимальная стоимость">
+									<input class="price__input price__input-right" type="text" name="booking-price-max" id="price-max" placeholder="До 3000" value="До 3000" aria-label="Максимальная стоимость">
+								</div>
+								<div class="price__slider">
+									<div class="handle-left"></div>
+									<div class="handle-right"></div>
+									<div class="current-price-range"></div>
+								</div>
+							</div>
+							<input type="submit" value="Показать" class="btn btn-empty-white btn-show-results">
+						</div>
+					</form>
+				</section>
+				
+				<section class="section-results">
+					<h2 class="visually-hidden">Результаты поиска по гостиницам</h2>
+					<div class="sorting">
+						<div class="column-left">
+							<h3 class="header-regular">Найдено: 3</h3>
+							Сортировка:
+							<button type="button" class="btn btn-sort active">По цене</btn>
+							<button type="button" class="btn btn-sort">По типу</btn>
+							<button type="button" class="btn btn-sort">По рейтингу</btn>
+						</div>
+						<div class="column-right">
+							<button type="button" class="btn btn-sort-dir">
+								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" class="svg-transition"><path d="M5.5 0L0 10h11z"/></svg>
+								По возрастанию
+							</btn>
+							<button type="button" class="btn btn-sort-dir active">
+								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" class="svg-transition"><path d="M5.5 10L0 0h11"/></svg>
+								По убыванию
+							</btn>
+						</div>
+					</div>	
+					<ul class="hotels__list">
+						<li>
+							<article class="hotel__item">
+								<img class="hotel__img" src="img/amara-resort-preview.jpg" width="135" height="90" alt="Amara Resort & Spa">
+								<section class="hotel__description">
+									<h3 class="hotel__title"><a href="" target="_blank">Amara Resort & Spa</a></h3>
+									<div class="hotel__type">
+										<span class="type">Гостиница</span>
+										<span>От 4000 Р.</span>
+									</div>
+									<div class="hotel__btns">
+										<a href="" class="btn btn-blue btn-small">Подробнее</a>
+										<button type="button" class="btn btn-brown btn-small">Забронировать</btn>
+									</div>									
+								</section>
+								<div class="hotel__meta">
+									<span class="stars stars-4" aria-label="4 звезды"></span>
+									<span class="rating">Рейтинг: 8,5</span>
+								</div>
+							</article>
+						</li>
+						<li>
+							<article class="hotel__item">
+								<img class="hotel__preview" src="img/desert-quail-preview.jpg" width="135" height="90" alt="Amara Resort & Spa">
+								<section class="hotel__description">
+									<h3 class="hotel__title"><a href="" target="_blank">Desert Quail Inn</a></h3>
+									<div class="hotel__type">
+										<span class="type">Мотель</span>
+										<span>От 3000 Р.</span>
+									</div>
+									<div class="hotel__btns">
+										<a href="" class="btn btn-blue btn-small">Подробнее</a>
+										<button type="button" class="btn btn-brown btn-small">Забронировать</btn>
+									</div>									
+								</section>
+								<div class="hotel__meta">
+									<span class="stars stars-3" aria-label="3 звезды"></span>
+									<span class="rating">Рейтинг: 8,9</span>
+								</div>
+							</article>							
+						</li>
+						<li>
+							<article class="hotel__item">
+								<img class="hotel__preview" src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+								<section class="hotel__description">
+									<h3 class="hotel__title"><a href="" target="_blank">Villas at Poco Diablo</a></h3>
+									<div class="hotel__type">
+										<span class="type">Апартаменты</span>
+										<span>От 2000 Р.</span>
+									</div>
+									<div class="hotel__btns">
+										<a href="" class="btn btn-blue btn-small">Подробнее</a>
+										<button type="button" class="btn btn-brown btn-small">Забронировать</btn>
+									</div>									
+								</section>
+								<div class="hotel__meta">
+									<span class="stars stars-2" aria-label="2 звезды"></span>
+									<span class="rating">Рейтинг: 9,2</span>
+								</div>
+							</article>							
+						</li>
+					</ul>
+				</section>
+				
+			</main>		
 	    <footer class="main-footer">
         <div class="column-one-third footer__column">
           <div class="footer__wrapper">
