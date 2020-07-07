@@ -1,19 +1,26 @@
-@font-face { 
-	font-family: "PT Sans";
-	src: local("PT Sans"),
-		 url(../fonts/ptsans.woff2) format("woff2"),
-		 url(../fonts/ptsans.woff) format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face { 
-    font-family: "PT Sans";
-    src: local("PT Sans Bold"),
-		 url(../fonts/ptsansbold.woff2) format("woff2"),
-		 url(../fonts/ptsansbold.woff) format("woff");
-    font-weight: 700;
-    font-style: normal;
+:root {
+  --basic-light-white: #FFFFFF;
+  --basic-white: #F2F2F2;
+  --basic-dark-white: #EBEBEB;
+  --basic-dark-white2: #EEEEEE;
+	--basic-light-blue: #81B3D2;
+	--basic-light-blue2: #87B5D1;
+  --basic-blue: #669EC0;
+  --basic-dark-blue: #5496BD; 
+  --basic-light-gray: #BDBBBC;
+  --basic-light-gray2: #E5E5E5;
+  --basic-gray: #A9A9A9;
+	--basic-dark-gray: #CACACA;
+	--basic-light-brown: #928a85;
+	--basic-light-brown2: #766357;
+  --basic-brown: #604E43;
+  --basic-dark-brown: #503E33;
+  --basic-light-black: #6A6A6A;
+  --basic-light-black2: #666666;
+  --basic-black: #333333;
+  --basic-dark-black: #00000;
+	--basic-dark-black2: #231F20;
+	--basic-box-shadow: rgba(0,0,0,0.2);
 }
 
 html { 
@@ -24,10 +31,10 @@ body {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 21px;
-	color: #000000;
-	text-transform: uppercase; 
-
-	background-color: #f2f2f2;  
+	font-weight: normal;
+	color: var(--basic-dark-black);
+	text-transform: uppercase;
+	background-color: var(--basic-white);
 }
 
 *,
@@ -51,8 +58,8 @@ img {
     -moz-appearance: textfield;
 }
 
-input::-webkit-outer-spin-btn,
-input::-webkit-inner-spin-btn {
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
@@ -83,8 +90,8 @@ input::-webkit-inner-spin-btn {
 	max-width: 1200px;	
 	margin: 0 auto;
 	
-	background: #ffffff;
-	box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+	background: var(--basic-light-white);
+	box-shadow: 0 0 15px 0 var(--basic-box-shadow);;
 }
 
 .btn {
@@ -108,7 +115,6 @@ input::-webkit-inner-spin-btn {
 	width: 38px;
 	height: 38px;
 	padding: 0;
-	
 	font-size: 0;	
 	
 	background: none;
@@ -121,7 +127,7 @@ input::-webkit-inner-spin-btn {
 	top: 50%;
 	left: 50%;	
 	
-	background-color: #a9a9a9;
+	background-color: var(--basic-gray);
 	
 	transform: translate(-50%, -50%);
 	content: "";
@@ -151,12 +157,12 @@ input::-webkit-inner-spin-btn {
 .btn-number:hover::before,
 .btn-number:focus::after,
 .btn-number:focus::before {
-	background-color: #000000;
+	background-color: var(--basic-dark-black);
 }
 
 .btn-number:active::after,
 .btn-number:active::before {
-	background-color: #81b3d2;
+	background-color: var(--basic-light-blue);
 }
 
 .btn-calendar {
@@ -175,16 +181,16 @@ input::-webkit-inner-spin-btn {
 }
 
 .btn-calendar svg {
-	fill: #cacaca;
+	fill: var(--basic-dark-gray);
 }
 
 .btn-calendar:hover svg,
 .btn-calendar:focus svg {
-	fill: #000000;
+	fill: var(--basic-dark-black);
 }
 
 .btn-calendar:active svg {
-	fill: #81b3d2;
+	fill: var(--basic-light-blue);
 }	
 
 .btn-booking {
@@ -217,54 +223,54 @@ input::-webkit-inner-spin-btn {
 
 .btn-brown,
 .btn-blue {	
-	color: #fff;	
+	color: var(--basic-light-white);	
 	border: none;
 }
 
 .btn-brown {	
-	background-color: #766357;
+	background-color: var(--basic-light-brown2);
 }
 
 .btn-brown:hover,
 .btn-brown:focus {
-	color: #fff;
-	background-color: #604e43;
+	color: var(--basic-light-white);
+	background-color: var(--basic-brown);
 }
 
 .btn-brown:active {
-	color: #928a85;
-	background-color: #503e33;
+	color: var(--basic-light-brown);
+	background-color: var(--basic-dark-brown);
 }
 
 .btn-blue {		
-	background-color: #81b3d2;
+	background-color: var(--basic-light-blue);
 }
 
 .btn-blue:hover {
-	color: #fff;
-	background-color: #669ec0;
+	color: var(--basic-light-white);
+	background-color: var(--basic-blue);
 }
 
 .btn-blue:focus {
-	color: #88b6d1;
-	background-color: #5496bd;
+	color: var(--basic-light-brown2);
+	background-color: var(--basic-dark-blue);
 }
 
 .btn-blue:disabled,
 .btn-brown:disabled {
 	color: #c5c5c5;
-	background-color: #ebebeb;
+	background-color: var(--basic-dark-white);
 	cursor: default;
 }
 
 .btn-empty-white {
 	padding: 8px 33px;
 	
-	color: #ffffff;
+	color: var(--basic-light-white);
 	font-weight: 400;	
 	
 	background: none;
-	border: 2px solid #ffffff;
+	border: 2px solid var(--basic-light-white);
 	border-radius: 2px;
 }
 
@@ -276,17 +282,17 @@ input::-webkit-inner-spin-btn {
 
 .btn-empty-white:hover,
 .btn-empty-white:focus {
-	color: #000000;
-	background-color: #ffffff;
+	color: var(--basic-dark-black);
+	background-color: var(--basic-light-white);
 }
 
 .btn-empty-white:active {
-	background-color: #bdbbbc;
-	border-color: #bdbbbc;
+	background-color: var(--basic-light-gray);
+	border-color: var(--basic-light-gray);
 }
 
 .btn-empty-white:disabled {
-	color: #fff;
+	color: var(--basic-light-white);
 	background: none;
 	opacity: 0.3;
 	cursor: default;
@@ -301,7 +307,7 @@ input::-webkit-inner-spin-btn {
 	background: none;
 	
 	border: none;
-	border-bottom: 1px dotted #81b3d2;
+	border-bottom: 1px dotted var(--basic-light-blue);
 }
 
 .btn-sort:first-of-type {
@@ -309,17 +315,17 @@ input::-webkit-inner-spin-btn {
 }
 
 .btn-sort.active {
-	color: #81b3d2;
+	color: var(--basic-light-blue);
 	border-bottom: none;
 }
 
 .btn-sort:hover,
 .btn-sort:focus {
-	color: #81b3d2;	
+	color: var(--basic-light-blue);	
 }
 
 .btn-sort:active {
-	color: #000000;	
+	color: var(--basic-dark-black);	
 }
 
 .btn-sort-dir {
@@ -332,25 +338,38 @@ input::-webkit-inner-spin-btn {
 
 .btn-sort-dir svg {
 	margin-top: 5px;
-	fill: #cacaca;
+	fill: var(--basic-dark-gray);
 }
 
 .btn-sort-dir.active svg {
-	fill: #81b3d2;
+	fill: var(--basic-light-blue);
 }
 
 .btn-sort-dir:hover svg,
 .btn-sort-dir:focus svg {
-	fill: #81b3d2;
+	fill: var(--basic-light-blue);
 }
 
 .btn-sort-dir:active svg,
 .btn-sort-dir:active svg {
-	fill: #000000;
+	fill: var(--basic-dark-black);
 }
 
 .column-one-third {
 	flex-basis: 33.33%;
+}
+
+.header-regular {
+	margin-top: 0;
+	margin-bottom: 29px;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.header-large {
+	margin-top: 0;
+	margin-bottom: 33px;
+	font-size: 30px;
 }
 
 /* HEADER */
@@ -384,17 +403,17 @@ input::-webkit-inner-spin-btn {
 }
 
 .site-navigation__list a {
-	color: #000000;
+	color: var(--basic-dark-black);
 	font-weight: 700;
 }
 
 .site-navigation__list a:hover,
 .site-navigation__list a:focus {
-	color: #81b3d2;
+	color: var(--basic-light-blue);
 }
 
 .site-navigation__list a:active {
-	color: #cacaca;
+	color: var(--basic-dark-gray);
 }
 
 .site-navigation__logo {
@@ -540,7 +559,7 @@ input::-webkit-inner-spin-btn {
 	width: 100%; 
 	padding: 55px;
 	
-	background-color: #fff;
+	background-color: var(--basic-light-white);
 	
 	transform-origin: 50% 0;	
 	transition: transform ease 0.6s;
@@ -585,28 +604,28 @@ input::-webkit-inner-spin-btn {
 .booking__form-field {
 	height: 38px;
 	
-	color: #000;
+	color: var(--basic-dark-black);
 	font-weight: 700;
 	text-transform: uppercase;
 	
-	background-color: #f2f2f2;
+	background-color: var(--basic-white);
 	border: none;
 	transition: all ease 0.2s;
 }
 
 .booking__form-field::placeholder {
-	color: #000000;
+	color: var(--basic-dark-black);
 	font-weight: 700;
 	opacity: 1;
 }
 
 .booking__form-field:hover {
-	background-color: #ebebeb;
+	background-color: var(--basic-dark-white);
 }
 
 .booking__form-field:focus {
-	background-color: #ffffff;
-	box-shadow: 0 0 0 2px #e5e5e5 inset;
+	background-color: var(--basic-light-white);
+	box-shadow: 0 0 0 2px var(--basic-light-gray2) inset;
 }
 
 .booking__form-field:disabled {
@@ -629,6 +648,52 @@ input::-webkit-inner-spin-btn {
 	position: relative;
 	width: 114px;
 }
+
+
+.sorting{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: url(../img/line.png) repeat-x bottom center;
+  padding: 11px 73px 14px 73px;
+}
+.sorting__list{
+  display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.sorting__link {
+	padding: 3px;
+	margin-left: 27px;
+	
+	color: #b1b1b1;
+	
+	background: none;
+	
+	border: none;
+	border-bottom: 1px dotted var(--basic-light-blue);
+}
+
+.sorting__link:first-of-type {
+	margin-left: 37px;
+}
+
+.sorting__link.active {
+	color: var(--basic-light-blue);
+	border-bottom: none;
+}
+
+.sorting__link:hover,
+.sorting__link:focus {
+	color: var(--basic-light-blue);	
+}
+
+.sorting__link:active {
+	color: var(--basic-dark-black);	
+}
+
 
 .sorting {
 	display: flex;
@@ -670,7 +735,7 @@ input::-webkit-inner-spin-btn {
 .sorting {
 	padding-left: 72px; 
 	padding-right: 72px; 
-	border-bottom: 1px solid #e5e5e5;
+	border-bottom: 1px solid var(--basic-light-gray2);
 }
 
 .hotel__description {
@@ -689,11 +754,11 @@ input::-webkit-inner-spin-btn {
 }
 
 .hotel__title a {
-	color: #000000;
+	color: var(--basic-dark-black);
 }
 
 .hotel__title a:hover {
-	color: #81b3d2;
+	color: var(--basic-light-blue);
 }
 
 .hotel__title a:focus {
@@ -760,11 +825,11 @@ input::-webkit-inner-spin-btn {
 .rating {
 	padding: 4px 13px 2px 13px;
 	
-	color: #666666;
+	color: var(--basic-light-black2);
 	text-transform: uppercase;
 	text-align: center;	
 	
-	background-color: #f2f2f2;
+	background-color: var(--basic-white);
 }
 
 .sorting {
@@ -788,7 +853,7 @@ input::-webkit-inner-spin-btn {
 .sorting {
 	padding-left: 72px; 
 	padding-right: 72px; 
-	border-bottom: 1px solid #e5e5e5;
+	border-bottom: 1px solid var(--basic-light-gray2);
 }
 
 
@@ -832,12 +897,12 @@ input::-webkit-inner-spin-btn {
 }
 
 .footer__tel a {
-	color: #000000;
+	color: var(--basic-dark-black);
 }
 
 .footer__tel a:hover,
 .footer__tel a:focus {
-	color: #81b3d2;
+	color: var(--basic-light-blue);
 }	
 
 .social-links {
@@ -859,24 +924,24 @@ input::-webkit-inner-spin-btn {
 	text-align: center;
 	line-height: 54px;
 	
-	background-color: #81b3d2;
+	background-color: var(--basic-light-blue);
 }
 
 .social-link svg {
-	fill: #ffffff;
+	fill: var(--basic-light-white);
 }
 
 .social-link:hover,
 .social-link:focus {
-	background-color: #669ec0;
+	background-color: var(--basic-blue);
 }
 
 .social-link:active {
-	background-color: #5496bd;
+	background-color: var(--basic-dark-blue);
 }
 
 .social-link:active svg {
-	fill: #88b6d1;
+	fill: var(--basic-light-brown2);
 }
 
 .icon-fb {
@@ -896,11 +961,11 @@ input::-webkit-inner-spin-btn {
 
 .logo-htmlacademy :hover svg,
 .logo-htmlacademy :focus svg {
-	fill: #81b3d2;
+	fill: var(--basic-light-blue);
 }
 
 .logo-htmlacademy :active svg {
-	fill: #bdbbbc;
+	fill: var(--basic-light-gray);
 }
 
 /* FOOTER */
