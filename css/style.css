@@ -538,7 +538,7 @@ input::-webkit-inner-spin-button {
 	flex-grow: 1;
 	flex-basis: 66.66%;
 	
-	background-color: #81b3d2;
+	background-color: var(--basic-light-blue);
 	
 	overflow: hidden;	
 }
@@ -563,12 +563,12 @@ input::-webkit-inner-spin-button {
 }
 
 .block-blue {
-	color: #fff;
-	background-color: #81b3d2; 
+	color: var(--basic-light-white);
+	background-color: var(--basic-light-blue); 
 }
 
 .block-gray {
-	background-color: #eeeeee; 
+	background-color: var(--basic-dark-white2); 
 }
 
 
@@ -732,6 +732,45 @@ input::-webkit-inner-spin-button {
 .content-width-8 {
 	width: 250px;	
 }
+
+/* filters hotels */
+
+.section-filters {
+	padding: 26px 73px 31px 73px;
+	color: var(--basic-light-white);
+	background: url("../img/bg-mountains-2.jpg");
+}
+
+.section-filters form {
+	display: flex;
+}
+
+.filters-column__first {
+	flex-basis: 136px;
+}
+
+.filters-column__second {
+	flex-grow: 1;
+	margin-left: 119px;	
+}
+
+.section-filters label {
+	position: relative;
+	display: block;
+	margin-top: 23px;
+	padding-left: 39px;
+	line-height: 23px;	
+}
+
+.price__inputs {
+	display: flex;
+	width: 318px;
+	padding: 5px;
+	border: 2px solid var(--basic-light-white);
+	border-radius: 2px;
+}
+
+/* sorting hotels */
 
 .sorting{
   display: flex;

@@ -14,10 +14,10 @@
             <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип">
           </a> 
           <ul class="site-navigation__list">
-            <li><a href="">Информация</a></li>
-            <li><a href="">Фото и видео</a></li>
-            <li class="site-navigation__item menu-item"><a href="">Карта штата</a></li>
-            <li class="site-navigation__item"><a href="hotels.html">Гостиницы</a></li>						
+            <li class="site-navigation__item"><a href="#">Информация</a></li>
+            <li class="site-navigation__item"><a href="#">Фото и видео</a></li>
+            <li class="site-navigation__item menu-item-right menu-item"><a href="#">Карта штата</a></li>
+            <li class="site-navigation__item menu-item-right"><a href="hotels.html">Гостиницы</a></li>						
           </ul>
         </nav>
       </header>
@@ -60,8 +60,8 @@
 								Мотель
 							</label>
 							<label class="checkbox">
-								<input class="checkbox__input visually__hidden" type="checkbox" name="booking-apartments" value="Апартаменты" checked>
-								<span class="checkbox-fake"></span>
+								<input class="checkbox__input visually-hidden" type="checkbox" name="booking-apartments" value="Апартаменты" checked>
+								<span class="checkbox__fake"></span>
 								Апартаменты
 							</label>
 						</div>
@@ -69,8 +69,8 @@
 							<h3 class="header-small-price">Стоимость в сутки (Р):</h3>
 							<div class="price__slider-wrapper">
 								<div class="price__inputs">									
-									<input class="price__input price__input-left" type="text" name="booking-price-min" id="price-min"  placeholder="От 0" value="От 0" aria-label="Минимальная стоимость">
-									<input class="price__input price__input-right" type="text" name="booking-price-max" id="price-max" placeholder="До 3000" value="До 3000" aria-label="Максимальная стоимость">
+									<input class="price__input" type="text" name="booking-price-min" id="price-min"  placeholder="От 0" value="От 0" aria-label="Минимальная стоимость">
+									<input class="price__input" type="text" name="booking-price-max" id="price-max" placeholder="До 3000" value="До 3000" aria-label="Максимальная стоимость">
 								</div>
 								<div class="price__slider">
 									<div class="handle-left"></div>
@@ -78,7 +78,7 @@
 									<div class="current-price-range"></div>
 								</div>
 							</div>
-							<input type="submit" value="Показать" class="btn btn-empty-white btn-show-results">
+							<input class="btn btn-empty-white btn-show-results" type="submit" value="Показать">
 						</div>
 					</form>
 				</section>
