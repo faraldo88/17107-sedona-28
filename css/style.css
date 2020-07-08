@@ -394,9 +394,9 @@ input::-webkit-inner-spin-button {
 	padding: 17px 0 18px 0;	
 }
 
-.site-navigation__item {
+.menu-item-right {
 	text-align: right;
-}
+} 
 
 .menu-item{
 	margin-left: auto;
@@ -423,8 +423,7 @@ input::-webkit-inner-spin-button {
 	transform: translate(-50%, 0);
 }
 
-
-.page-header{
+.header-regular {
   margin-top: 0;
 	margin-bottom: 29px;
 	font-size: 21px;
@@ -477,10 +476,6 @@ input::-webkit-inner-spin-button {
 	text-align: center;
 }
 
-.section-reasons__wrapper{
-  padding: 58px 0 54px 0;	
-}
-
 .reasons__item p {
 	margin: 0;
 }
@@ -503,9 +498,14 @@ input::-webkit-inner-spin-button {
 	padding-bottom: 83px;
 }
 
-.reason-header {
+.reasons__title {
 	margin-bottom: 23px;		
 	line-height: 21px;
+}
+
+.reasons__num {
+	display: block;
+	margin-bottom: 21px;
 }
 
 .icon-wrapper {
@@ -521,10 +521,56 @@ input::-webkit-inner-spin-button {
 	left: 50%;
 }
 
-.reason-num {
-	display: block;
-	margin-bottom: 21px;
+.icon-house {
+	transform: translate(-50%, -50%) scale(1.1);
 }
+
+.icon-food {
+	transform: translate(-50%, -50%) scale(1.05);
+}
+
+.icon-gift {
+	transform: translate(-50%, -50%) scale(1.15);
+}
+
+.block-img {	
+	position: relative;
+	flex-grow: 1;
+	flex-basis: 66.66%;
+	
+	background-color: #81b3d2;
+	
+	overflow: hidden;	
+}
+
+.img-right,
+.img-left {
+	position: absolute;
+	top: 0;
+	
+	display: block;
+	width: auto;
+	height: 100%;
+	max-width: 9999px;
+}
+
+.img-right {
+	right: 0;
+}
+
+.img-left {
+	left: 0;
+}
+
+.block-blue {
+	color: #fff;
+	background-color: #81b3d2; 
+}
+
+.block-gray {
+	background-color: #eeeeee; 
+}
+
 
 
 .booking__descriptor {
@@ -649,6 +695,43 @@ input::-webkit-inner-spin-button {
 	width: 114px;
 }
 
+
+.content-width {
+	margin-right: auto;
+	margin-left: auto;	
+}
+
+.content-width-1 {
+	width: 450px;
+}
+
+.content-width-2 {
+	width: 130px;
+}
+
+.content-width-3 {
+	width: 290px;
+}
+
+.content-width-4 {
+	width: 270px;
+}
+
+.content-width-5 {
+	width: 220px;	
+}
+
+.content-width-6 {
+	width: 280px;
+}
+
+.content-width-7 {
+	width: 310px;
+}
+
+.content-width-8 {
+	width: 250px;	
+}
 
 .sorting{
   display: flex;
