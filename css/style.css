@@ -1,3 +1,21 @@
+@font-face { 
+	font-family: "PT Sans";
+	src:
+		 url(../fonts/ptsans.woff2) format("woff2"),
+		 url(../fonts/ptsans.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face { 
+    font-family: "PT Sans";
+    src:
+		 url(../fonts/ptsansbold.woff2) format("woff2"),
+		 url(../fonts/ptsansbold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
 :root {
   --basic-light-white: #FFFFFF;
   --basic-white: #F2F2F2;
@@ -762,6 +780,20 @@ input::-webkit-inner-spin-button {
 	line-height: 23px;	
 }
 
+.checkbox__fake {
+	position: absolute;
+	left: 0;
+	
+	width: 27px;
+	height: 23px;
+	
+	background-image: url("../img/checkbox-off.svg");
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	
+	cursor: pointer;
+}
+
 .price__inputs {
 	display: flex;
 	width: 318px;
@@ -769,6 +801,79 @@ input::-webkit-inner-spin-button {
 	border: 2px solid var(--basic-light-white);
 	border-radius: 2px;
 }
+
+.price__input {
+	flex-basis: 50%;
+	height: 22px;
+	min-width: 0;
+	
+	color: var(--basic-light-white);
+	text-align: center;
+	text-transform: uppercase;
+	
+	background: none;
+	border: none;
+}
+
+.price__input:disabled {
+	color: rgba(255,255,255,0.3);
+}
+
+.price__input-left {
+	border-right: 1px solid var(--basic-light-white);
+}
+
+.price__input-right {
+	padding-left: 10px;
+	border-left: 1px solid var(--basic-light-white);
+}
+
+.price__slider {
+	position: relative;
+	height: 2px;
+	margin-top: 20px;
+	background-color: rgba(255,255,255,0.3); 
+}
+
+.current-price-range,
+.handle-left,
+.handle-right {
+	position: absolute;
+}
+
+.handle-left,
+.handle-right {
+	top: -9px;
+	z-index: 100;
+	
+	width: 20px;
+	height: 20px;
+	
+	background-color: #ababab;
+	
+	border-radius: 50%;
+	border: 8px solid var(--basic-light-white);
+	box-shadow: 0 2px 0 0 rgba(255,255,255,0.3);
+
+	cursor: pointer;
+	transition: transform ease 0.2s;	
+}
+
+.handle-left {
+	left: 0;
+}
+
+.handle-right {
+	right: 45px;
+}
+
+.current-price-range {
+	z-index: 55;
+	height: 100%;
+	width: 263px;
+	background-color: var(--basic-light-white);
+}
+
 
 /* sorting hotels */
 
