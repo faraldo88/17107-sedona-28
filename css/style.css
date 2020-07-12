@@ -223,7 +223,7 @@ input::-webkit-inner-spin-button {
 
 .btn-full-width {
 	width: 100%;
-	margin-top: 53px;
+	margin-top: 55px;
 	padding: 16px 20px 18px 20px;
 	white-space: normal;
 }
@@ -386,7 +386,7 @@ input::-webkit-inner-spin-button {
 
 .header-large {
 	margin-top: 0;
-	margin-bottom: 33px;
+	margin-bottom: 34px;
 	font-size: 30px;
 }
 
@@ -497,7 +497,7 @@ input::-webkit-inner-spin-button {
 
 .reason-regular {
 	padding-top: 47px;
-	padding-bottom: 60px;
+	padding-bottom: 54px;
 }
 
 .reason-tall {
@@ -506,20 +506,20 @@ input::-webkit-inner-spin-button {
 }
 
 .reasons__title {
-	margin-bottom: 23px;		
-	line-height: 21px;
+	margin-bottom: 24px;		
+	line-height: 22px;
 }
 
 .reasons__num {
 	display: block;
-	margin-bottom: 21px;
+	margin-bottom: 24px;
 }
 
 .icon-wrapper {
 	position: relative;
 	width: 75px;
 	height: 76px;
-	margin-bottom: 29px;
+	margin-bottom: 26px;
 }
 
 .icon-wrapper img {
@@ -533,7 +533,7 @@ input::-webkit-inner-spin-button {
 }
 
 .icon-food {
-	transform: translate(-50%, -50%) scale(1.05);
+	transform: translate(-50%, -53%) scale(1.07);
 }
 
 .icon-gift {
@@ -581,11 +581,11 @@ input::-webkit-inner-spin-button {
 
 
 .booking__descriptor {
-	line-height: 23px;
+	line-height: 25px;
 }
 
 .booking__header-wrapper {
-	padding: 57px 0 48px 0;
+	padding: 56px 0 44px 0;
 }
 
 .booking__form-wrapper {
@@ -639,11 +639,11 @@ input::-webkit-inner-spin-button {
 }
 
 .form__row-full {
-	margin-bottom: 30px;
+	margin-bottom: 29px;
 }
 
 .form__row-full label {
-	flex-basis: 114px;
+	flex-basis: 112px;
 }
 
 .form__row-half label {
@@ -688,7 +688,7 @@ input::-webkit-inner-spin-button {
 .form__field-gray-1 {
 	flex-basis: 114px;
 	flex-grow: 1;
-	padding: 0 40px 0 11px;
+	padding: 0 40px 0 12px;
 }
 
 .form__field-gray-2 {
@@ -713,7 +713,7 @@ input::-webkit-inner-spin-button {
 }
 
 .content-width-2 {
-	width: 130px;
+	width: 150px;
 }
 
 .content-width-3 {
