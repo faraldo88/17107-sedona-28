@@ -379,7 +379,7 @@ input::-webkit-inner-spin-button {
 
 .header-regular {
 	margin-top: 0;
-	margin-bottom: 29px;
+	margin-bottom: 46px;
 	font-size: 21px;
 	line-height: 26px;
 }
@@ -441,18 +441,6 @@ input::-webkit-inner-spin-button {
 	transform: translate(-50%, 0);
 }
 
-.header-regular {
-  margin-top: 0;
-	margin-bottom: 29px;
-	font-size: 21px;
-	line-height: 26px;
-}
-
-.header-large {
-	margin-top: 0;
-	margin-bottom: 33px;
-	font-size: 30px;
-}
 
 .welcome-wrapper {	
 	display: flex;
@@ -499,12 +487,13 @@ input::-webkit-inner-spin-button {
 }
 
 .reasons-header-wrapper {
-	padding: 58px 0 54px 0;	
+	padding: 42px 0 54px 0;	
 }
-
+/*
 .reasons-descriptor {
 	letter-spacing: 0.1px;
 }
+*/
 
 .reason-regular {
 	padding-top: 47px;
@@ -728,7 +717,7 @@ input::-webkit-inner-spin-button {
 }
 
 .content-width-3 {
-	width: 290px;
+	width: 300px;
 }
 
 .content-width-4 {
