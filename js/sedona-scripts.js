@@ -89,7 +89,7 @@ ymaps.ready(function () {
 		}, 
 		{
 			iconLayout: "default#image",
-			iconImageHref: "http://fsfamily.ru/imgs/marker.png",
+			iconImageHref: "img/marker.png",
 			iconImageSize: [80, 72],
 			iconImageOffset: [-40, -72]
 		}

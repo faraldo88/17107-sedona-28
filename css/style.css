@@ -462,6 +462,10 @@ input::-webkit-inner-spin-button {
 	transform: translate(-50%, 0);
 }
 
+/* HEADER */
+
+/* INDEX MAIN CONTENT */
+
 .welcome-wrapper {	
 	display: flex;
 	align-items: center;
@@ -831,7 +835,9 @@ input::-webkit-inner-spin-button {
 	width: 250px;	
 }
 
-/* filters hotels */
+/* INDEX MAIN CONTENT */
+
+/* HOTELS MAIN CONTENT */
 
 .section-filters {
 	padding: 26px 73px 31px 73px;
@@ -1012,8 +1018,6 @@ input::-webkit-inner-spin-button {
 	margin-bottom: 11px;
 }
 
-/* sorting hotels */
-
 .sorting{
 	display: flex;
 	justify-content: space-between;
@@ -1022,13 +1026,21 @@ input::-webkit-inner-spin-button {
 	font-size: 12px;
 }
 
-.sorting .header-regular {
-	margin: 0 47px 0 0;	
+.sorting__search{
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	margin: 4px 47px 0px 1px;
+}
+
+.sorting__title{
+	font-size: 12px;
+	font-weight: normal;
 }
 
 .sorting .column-left {
 	display: flex;
-	align-items: baseline;
+	align-items: center;
 }
 
 .sorting__list{
@@ -1066,12 +1078,14 @@ input::-webkit-inner-spin-button {
 	color: var(--basic-light-blue);	
 }
 
+.sorting__link:focus {
+	border: none;
+}
+
 .sorting__link:active {
 	color: var(--basic-dark-black);	
 	border: none;
 }
-
-/* hotel list */
 
 .hotels__list {
 	margin: 0;
@@ -1189,9 +1203,9 @@ input::-webkit-inner-spin-button {
 	background-color: var(--basic-white);
 }
 
-/* hotels main */
+/* HOTELS MAIN CONTENT */
 
-/* footer */
+/* FOOTER */
 
 .main-footer {
 	position: absolute;
@@ -1203,7 +1217,7 @@ input::-webkit-inner-spin-button {
 .inner-page-footer {
 	display: flex;
 	width: 100%;
-	padding: 22px 0 43px 0;
+	padding: 22px 0 40px 0;
 	background-color: var(--basic-bg-footer);	
 }
 
@@ -1286,23 +1300,23 @@ input::-webkit-inner-spin-button {
 	padding-top: 3px;
 }
 
-.logo-htmlacademy {
+.logo-htmla {
 	position: relative;
 	top: -1px;
 	width: 115px;
 	height: 39px;	
 }
 
-.logo-htmlacademy  {
+.logo-htmla {
 	margin-left: 8px;
 }
 
-.logo-htmlacademy :hover svg,
-.logo-htmlacademy :focus svg {
+.logo-htmla:hover svg,
+.logo-htmla:focus svg {
 	fill: var(--basic-light-blue);
 }
 
-.logo-htmlacademy :active svg {
+.logo-htmla:active svg {
 	fill: var(--basic-light-gray);
 }
 
