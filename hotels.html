@@ -10,14 +10,14 @@
     <div class="site-wrapper">
       <header class=main-header>
         <nav class="site-navigation">
-          <a class="site-navigation__logo">
+          <a href="index.html" class="site-navigation__logo">
             <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип">
           </a> 
           <ul class="site-navigation__list">
             <li class="site-navigation__item"><a href="#">Информация</a></li>
             <li class="site-navigation__item menu-right"><a href="#">Фото и видео</a></li>
             <li class="site-navigation__item menu-item-right menu-item menu-left"><a href="#">Карта штата</a></li>
-            <li class="site-navigation__item menu-item-right"><a href="hotels.html">Гостиницы</a></li>						
+            <li class="site-navigation__item menu-item-right current-page-menu-item"><a href="hotels.html">Гостиницы</a></li>						
           </ul>
         </nav>
       </header>
@@ -88,8 +88,8 @@
 					<h2 class="visually-hidden">Результаты поиска по гостиницам</h2>
 					<div class="sorting">
 						<div class="column-left">
-							<h3 class="header-regular">Найдено: 3</h3>
-							Сортировка:
+							<span>Найдено: 3</span>
+							<h3 class="header-regular">Сортировка:</h3>
 							<ul class="sorting__list">
 								<li class="sorting__item"><a href="#" class="sorting__link active">по цене</a></li>
 								<li class="sorting__item"><a href="#" class="sorting__link">по типу</a></li>
@@ -97,14 +97,14 @@
 							</ul>
 						</div>
 						<div class="column-right">
-							<button type="button" class="btn btn-sort-dir">
+							<a href="#" class="btn btn-sort-dir">
 								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" class="svg-transition"><path d="M5.5 0L0 10h11z"/></svg>
 								По возрастанию
-							</button>
-							<button type="button" class="btn btn-sort-dir active">
+							</a>
+							<a href="#" class="btn btn-sort-dir active">
 								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" class="svg-transition"><path d="M5.5 10L0 0h11"/></svg>
 								По убыванию
-							</button>
+							</a>
 						</div>
 					</div>	
 					<ul class="hotels__list">

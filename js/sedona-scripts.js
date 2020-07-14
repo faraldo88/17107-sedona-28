@@ -67,3 +67,35 @@ formBooking.addEventListener("submit", function (e) {
 });	
 
 /* Валидация и анимация формы бронирования */
+
+/* Карта */
+
+ymaps.ready(function () {
+	
+	var centerCoords = [34.869497, -111.760186], mZoom = 8;
+	var myMap = new ymaps.Map("sedona-location", 
+		{
+			center: centerCoords,
+			zoom: mZoom
+		}, 
+		{
+			searchControlProvider: "yandex#search"
+		}
+	),
+	marker = new ymaps.Placemark([34.869497, -111.760186], 
+		{
+			hintContent: "Город Седона",
+			balloonContent: ""
+		}, 
+		{
+			iconLayout: "default#image",
+			iconImageHref: "http://fsfamily.ru/imgs/marker.png",
+			iconImageSize: [80, 72],
+			iconImageOffset: [-40, -72]
+		}
+	);
+	myMap.geoObjects.add(marker);
+	
+});	
+
+/* Карта */
